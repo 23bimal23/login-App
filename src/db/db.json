@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Bimal Paudel",
+      "email": "bimal@gmail.com",
+      "password": "Delta1122!",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "name": "SUman Paudel",
+      "email": "suman@gmail.com",
+      "password": "Delta1122!",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "Bishal Sapkota",
+      "email": "sapkotabis@gmail.com",
+      "password": "Delta1122!",
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "name": "Hari Khanal",
+      "email": "company@example.com",
+      "password": "Delta1122!",
+      "role": "admin"
+    },
+
+    {
+      "name": "AdminGPON",
+      "email": "bim@gmail.com",
+      "password": "Delta1122!",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "name": "Sick Leave",
+      "email": "fff@gmail.com",
+      "password": "Delta1122!",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "name": "userADMIN",
+      "email": "bimal6777@gmail.com",
+      "password": "Delta1122!",
+      "role": "user",
+      "id": 10
+    }
+  ]
+}

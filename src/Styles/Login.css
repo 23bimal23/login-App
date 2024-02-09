@@ -1,0 +1,121 @@
+.login-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: auto;
+    padding: 100px 0;
+   
+}
+.login-form-wrapper{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card{
+    background: rgba(0, 0, 1, 0.5);
+    padding: 20px 50px;
+   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 0px;
+    
+}
+.register{
+    border-top: 0px;
+    background: rgba(0, 0, 1, 0.5);
+    padding: 20px 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register > a{
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+    font-weight: 400;
+}
+.card > .heading{
+    color: #221550;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+form{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    
+}
+.input-field > .eyeIcon{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+i{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    
+}
+i::before{
+    font-size: 16px;
+    color: green;
+}
+input{
+    background-color: #fff;
+    color: #111;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 30px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 300px;
+
+}
+input[type="submit"]{
+    width: fit-content;
+}
+
+input::placeholder{
+    color: #111;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 300;
+}
+.error{
+color: red;
+font-style: italic;
+font-size: 12px;
+font-weight: 300;
+}
+.submit-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.submit-input > button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: rgb(12, 19, 12);
+    color: white;
+    border: none;
+
+}
+.submit-input > a{
+    color: rgb(245, 245, 248);
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+}
