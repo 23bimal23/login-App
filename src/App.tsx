@@ -9,8 +9,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Register from "./pages/Register";
-import { Provider } from "react-redux";
-import { store } from "./store";
+import ProductDetail from "./pages/ProductDetail";
 
 const App = () => {
   return (
@@ -18,14 +17,13 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-      {/* <Provider store={store}> */}
         <Route path="/" element={<PrivateRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="gallery" element={<Gallery />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
         </Route>
-        {/* </Provider> */}
       </Routes>
     </Router>
   );

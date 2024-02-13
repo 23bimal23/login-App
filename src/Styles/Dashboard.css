@@ -9,6 +9,37 @@
     position: fixed;
     height: 100%;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cart-botton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .cart-botton > svg {
+    padding: 10px;
+    
+    border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  }
+  .cart-botton >span{
+    text-align: center;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    transform: translateX(-30%);
+    border-radius: 50%;
+    color: white;
+    background: red;
+    font-size: 16px;
+    
   }
   
  
@@ -55,7 +86,8 @@
     padding: 0;
     padding-left: 10px;
     margin-left: 200px;
-    width: 100%;
+    width: calc(100% - 220px);
+
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -79,7 +111,109 @@
 }
  
 div.content {
+  width: calc(100% - 220px);
     margin-left: 200px;
     margin-top: auto;
     padding: 16px;
   }
+  .store{
+    padding: 50px 20px;
+    width: 100%;
+  }
+  .items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .product-preview{
+    padding: 20px 50px;
+margin-inline: auto;
+/* border: 1px solid ; */
+border: 1px solid white;
+border-radius: 15px;
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  }
+  .product-preview > a{
+    text-decoration: none;
+  }
+  .product-preview h2{
+    font-size: 14px;
+    font-weight: 400;
+    color: green;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.product-preview .image{
+height: 400px;
+width: fit-content;
+margin-inline: auto;
+}
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+
+}
+.add-to-cart{
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn-add-cart, .btn-update,.btn-remove{
+  padding: 5px 15px;
+  font-size:10px;
+  color: white;
+  border: none;
+  outline: none;
+}
+.cart-itemsss{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.cart-update{
+  display: flex;
+}
+.btn-add-cart{
+  background: #255;
+  width: fit-content;
+}
+.btn-update{
+  background: green;
+}
+.btn-remove{
+  background: red;
+}
+
+
+.paginationButtons{
+  width: 100%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.paginationButtons a{
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+  cursor: pointer;
+}
+.paginationButtons a:hover{
+  color: #fff;
+  background: #2b2eff;
+}
+.paginationActive a{
+  color: #fff;
+  background-color: #2b2eff;
+
+  
+}

@@ -1,33 +1,17 @@
 import { useState, useEffect } from "react";
 
-type URLType = {
-  url: string
-}
-type UserData = {
-  id:number
-  name: string
-  email: string
-  password: string
-  role:string
-}
 
-type FetchResult = {
-  data: UserData| null;
-  isPending: boolean;
-  error: string | null;
-}
-
-const useFetch = (url: URLType): FetchResult => {
-  const [data, setData] = useState<UserData| null>(null);
+const useFetch = (url:string) => {
+  const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
     setTimeout(() => {
-      fetch(url.url, { signal })
+      fetch(url, { signal })
         .then((res) => {
           if (!res.ok) {
             throw Error("Could not fetch data for that resource");
@@ -47,10 +31,10 @@ const useFetch = (url: URLType): FetchResult => {
             setError(err.message);
           }
         });
-    }, 1000);
+    }, 100);
 
     return () => abortController.abort();
-  }, [url.url]);
+  }, [url]);
 
   return {
     data,
